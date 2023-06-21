@@ -36,15 +36,50 @@ body {
   color: var(--soft-blue);
 }
 
+.img-wrapper-div {
+  width: 270px;
+  max-height: 270px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.overlay-div {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 255, 255, 0.438);
+ border-radius: 8px;
+ opacity: 0;
+}
+.overlay-div:hover {
+  opacity: 1;
+  cursor: grab;
+}
+
+[src="images/icon-view.svg"]{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
 [src="images/image-equilibrium.jpg"] {
   border-radius: 8px;
+  width: 100%;
 }
+
+
 
 main h1 {
   color: var(--white);
   font-size: 18px;
   font-weight: 400;
   margin: 20px 0;
+}
+main h1:hover,
+.name:hover {
+  color: var(--cyan);
+  cursor: grab;
 }
 
 main p {
@@ -106,6 +141,7 @@ hr {
 .name {
   color: var(--white);
 }
+
 
 footer,
 a {
